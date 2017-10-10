@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Meta Tags -->
+    <meta name="description" content="Sistema voltado para centralizar informações do seu candidato e saber tudo sobre sua carreira política">
+
+    <meta name="author" content="Gilson Filho">
+
+    <meta name="tags" content="meucandidato">
+    <meta name="tags" content="pesquisa">
+    <meta name="tags" content="eleicao">
+    <meta name="tags" content="candidato">
+
+    <meta property="og:locale" content="">
+    <meta property="og:site_name" content="Meu Candidato">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://meucandidato.me">
+    <meta property="og:title" content="Meu Candidato">
+    <meta property="og:description" content="Sistema voltado para centralizar informações do seu candidato e saber tudo sobre sua carreira política">
+
+    <meta property="og:image" content="http://meucandidato.me/static/img/header.jpg">
+
+    <title>Meu Candidato - Pesquisa de candidatos para eleitores conscientes</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="https://cdn.css.net/files/jquery.magnific-popup/1.0.0/magnific-popup.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="{{ url_for('static', filename='css/creative.min.css')}}" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">O que é o Meu Candidato?</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Como vai funcionar?</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Ajude</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1 id="homeHeading">Saiba quem é o seu candidato</h1>
+                <hr>
+                <p>Já pensou em uma forma de procurar todas as informações do seu candidato para saber se ele é uma boa escolha antes de votar? Esse projeto quer oferecer isso.</p>
+                <a href="{{ url_for('homepage.index') }}" class="btn btn-success btn-xl page-scroll">Inicie sua pesquisa</a>
+                <a href="#about" class="btn btn-primary btn-xl page-scroll">Saiba mais</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">O que é o Meu Candidato?</h2>
+                    <hr class="light">
+                    <p class="text-faded">
+                        Esse projeto tem o objetivo de facilitar a pesquisa sobre o seu candidato, e centralizar as informações como:
+                        dados eleitorais, os bens declarados, as doações recebidas, os partidos em que já passou e que está agora,
+                        se possui algum processo judicial, e muito mais que possa auxiliar na escolha de alguém que irá lhe representar.
+                    </p>
+                    <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Como vai funcionar?</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Como vai funcionar?</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-search text-primary sr-icons"></i>
+                        <h3>Pesquise o candidato</h3>
+                        <p class="text-muted">Pesquise pelo nome do candidato, que o sistema irá coletar informações que precisa.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-address-card text-primary sr-icons"></i>
+                        <h3>Busca nos Órgãos Eleitorais</h3>
+                        <p class="text-muted">Será analisado os dados do TSE que o candidato enviou, como bens declarados, doações recebidas</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
+                        <h3>Busca em Portais de Notícias</h3>
+                        <p class="text-muted">Iremos procurar também nos portais mais acessados no país como G1, R7, Folha, Istoé, Carta Capital, entre outros</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-money text-primary sr-icons"></i>
+                        <h3>Serenata de Amor</h3>
+                        <p class="text-muted">
+                            Com a API do <a href="https://serenatadeamor.org/">Serenata de Amor</a> podemos reunir os
+                            gastos anteriores, caso o seu candidato já foi eleito.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-user-circle-o text-primary sr-icons"></i>
+                        <h3>Agora é com você</h3>
+                        <p class="text-muted">
+                            Com todos esses dados à disposição, chega a hora de tomar sua decisão como cidadão e
+                            se preparar no dia da votação.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <aside class="bg-green">
+        <div class="container text-center">
+            <div class="call-to-action">
+                <h2>E mais importante: O projeto é de <strong>código-aberto!</strong></h2>
+                <a href="https://github.com/meucandidato/meucandidato" class="btn btn-default btn-xl sr-button">Acesse o Github do Projeto</a>
+            </div>
+        </div>
+    </aside>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Gostou da Idéia? Colabore!</h2>
+                    <hr class="primary">
+                    <p>
+                        Aqui tem espaço para qualquer ajuda. Se for programador e designer, precisamos de ajudar para evoluir essa idéia.
+                        Se não for, não tem problema, aceitamos novas idéias e sua divulgação é importante para juntar uma galera que
+                        pensa igual a gente.
+                    </p>
+                    <p>Abaixo tem os canais que podemos conversar sobre o projeto:</p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <i class="fa fa-wechat fa-3x sr-contact"></i>
+                    <p>Participe da nossa sala no <a href="https://gitter.im/meucandidato/Lobby">Gitter</a></p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+                    <p><a href="mailto:meucandidatoapp@gmail.com">meucandidatoapp@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        window._urq = window._urq || [];
+        _urq.push(['initSite', '68c69015-0188-4786-90fe-9ffe438ef2ff']);
+        (function() {
+            var ur = document.createElement('script'); ur.type = 'text/javascript'; ur.async = true;
+            ur.src = ('https:' == document.location.protocol ? 'https://cdn.userreport.com/userreport.js' : 'http://cdn.userreport.com/userreport.js');
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ur, s);
+        })();
+    </script>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/3.3.5/scrollreveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="{{ url_for('static', filename='js/creative.min.js') }}"></script>
+
+</body>
+
+</html>
