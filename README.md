@@ -2,7 +2,7 @@
 
 Sistema voltado para centralizar informações do seu candidato, e tornar acessível para qualquer eleitor sobre sua vida, carreira e qualquer notícia relacionado a ele e seu partido.
 
-[![Join the chat at https://gitter.im/meucandidato/projeto](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/dotnet/coreclr?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Join the chat at https://gitter.im/meucandidato/projeto](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/meucandidato/projeto?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Documentation Status](https://readthedocs.org/projects/meucandidato/badge/?version=latest)](http://meucandidato.readthedocs.io/en/latest/?badge=latest)
 [![Tracis-CI build status](https://travis-ci.org/gilsondev/meucandidato.svg?branch=master)](https://travis-ci.org/gilsondev/meucandidato)
 
