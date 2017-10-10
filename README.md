@@ -6,7 +6,7 @@ Sistema voltado para centralizar informações do seu candidato, e tornar acess�
 [![Documentation Status](https://readthedocs.org/projects/meucandidato/badge/?version=latest)](http://meucandidato.readthedocs.io/en/latest/?badge=latest)
 [![Tracis-CI build status](https://travis-ci.org/gilsondev/meucandidato.svg?branch=master)](https://travis-ci.org/gilsondev/meucandidato)
 
-[Screenshot]
+![Página inicial](screenshots/homepage.png)
 
 ## Objetivo
 
