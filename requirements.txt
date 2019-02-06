@@ -1,0 +1,8 @@
+Flask==0.12.4
+Flask-Bootstrap==3.3.7.1
+Flask-WTF==0.14.2
+dynaconf==0.5.2
+gunicorn==19.7.1
+import-string==0.1.0
+pymongo==3.5.1
+pyyaml>=4.2b
