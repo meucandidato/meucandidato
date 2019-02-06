@@ -55,6 +55,11 @@ $ source venv/bin/activate
 $ make develop
 ```
 
+Para a instalação do `pyyaml` é necessário que tenha a dependência `libyaml-dev`:
+```shell
+$ sudo apt-get install libyaml-dev
+```
+
 Para execução de testes faça:
 
 ```shell
